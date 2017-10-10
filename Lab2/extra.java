@@ -6,7 +6,7 @@ public class extra{
 		System.out.println("Please input a English letter: ");
 		letter = scan.next().charAt(0);
 		System.out.println(letter + " and its neighbours in ASCII: ");
-		System.out.printf("%d     %d     %d\n", letter-1, letter, letter+1);
-		System.out.printf("%c     %c     %c\n", letter-1, letter, letter+1);
+		System.out.printf("%d\t%d\t%d\n", letter-1, (int)letter, letter+1);
+		System.out.printf("%c\t%c\t%c\n", letter-1, letter, letter+1);
 	}
 }
