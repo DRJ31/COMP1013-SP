@@ -1,3 +1,5 @@
 *.class
 *.7z
 *.zip
+*.o
+*.out
