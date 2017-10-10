@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class extra{
+	public static void main(String[] args){
+		char letter;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please input a English letter: ");
+		letter = scan.next().charAt(0);
+		System.out.println(letter + " and its neighbours in ASCII: ");
+		System.out.printf("%d     %d     %d\n", letter-1, letter, letter+1);
+		System.out.printf("%c     %c     %c\n", letter-1, letter, letter+1);
+	}
+}
