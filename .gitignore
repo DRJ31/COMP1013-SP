@@ -3,3 +3,4 @@
 *.zip
 *.o
 *.out
+.DS_Store
