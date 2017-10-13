@@ -1,15 +1,7 @@
 #include <stdio.h>
 int main(){
 	int a, b;
-	printf("Please input 2 intergers: \n");
+	printf("Please input 2 integers: \n");
 	scanf("%d%d", &a, &b);
-	if(a > b){
-		printf("%d\n", a);
-	}
-	else if(a < b){
-		printf("%d\n", b);
-	}
-	else{
-		printf("a = b\n");
-	}
+	printf("%d\n", a > b ? a : b);
 }
