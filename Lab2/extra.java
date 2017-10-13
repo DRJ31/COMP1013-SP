@@ -3,7 +3,7 @@ public class extra{
 	public static void main(String[] args){
 		char letter;
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Please input a English letter: ");
+		System.out.println("Please input an English letter: ");
 		letter = scan.next().charAt(0);
 		System.out.println(letter + " and its neighbours in ASCII: ");
 		System.out.printf("%d\t%d\t%d\n", letter-1, (int)letter, letter+1);
