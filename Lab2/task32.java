@@ -11,6 +11,7 @@ public class task32{
 		System.out.printf("%d * %d = %d\n", a, b, a*b);
 		try{
 			System.out.printf("%d / %d = %d\n", a, b, a/b);
+			System.out.printf("%d %% %d = %d\n", a, b, a%b);
 		}catch(Exception e){
 			System.err.println("The second interger could not be 0.");
 		}
