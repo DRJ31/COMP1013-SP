@@ -6,6 +6,7 @@ public class task32{
 		Scanner scan = new Scanner(System.in);
 		a = scan.nextInt();
 		b = scan.nextInt();
+		scan.close();
 		System.out.printf("%d + %d = %d\n", a, b, a+b);
 		System.out.printf("%d - %d = %d\n", a, b, a-b);
 		System.out.printf("%d * %d = %d\n", a, b, a*b);
