@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
+int bitnum(int i, int pos);
 int main(){
-    printf("Please input an integer between 0 to 15: \n");
-    int a, i, tmp;
-    char result[5];
+    int a, result=0, i;
     scanf("%d", &a);
-    tmp = a;
-    itoa(a, result, 2);
-    printf("%d is %s in binary.\n", tmp, result);
+    printf("%d is %d%d%d%d in binary.\n", a, bitnum(a, 1), bitnum(a, 2), bitnum(a, 3), bitnum(a, 4));
     return 0;
+}
+int bitnum(int i, int pos){
+    return (i >> (4 - pos)) % 2;
 }
