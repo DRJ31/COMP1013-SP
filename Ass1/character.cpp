@@ -1,5 +1,5 @@
 #include <stdio.h>
-const char* judge(int num);
+const char* judge(int num);//function to judge if the character is a number or an English letter or something else according to ASCII code
 int main()
 {
 	char a;

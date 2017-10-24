@@ -1,5 +1,5 @@
 #include <stdio.h>
-int digits(int num);
+int digits(int num);//function to judge the number of digits in the number
 int main()
 {
 	int a;
