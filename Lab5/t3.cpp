@@ -8,17 +8,11 @@ int main()
 	puts("Convert to Euro(E) or RMB(R)?");
 	getchar();
 	scanf("%c", &currency);
-	switch (currency)
-	{
-	case 'E':
+	if (currency == 'E')
 		printf("%g US dollars converts to %g euros.\n", dollar, dollar * 0.5);
-		break;
-	case 'R':
+	else if (currency == 'R')
 		printf("%g US dollars converts to %g RMB.\n", dollar, dollar * 7);
-		break;
-	default:
+	else
 		puts("Please input the right character.");
-		break;
-	}
 	return 0;
 }
