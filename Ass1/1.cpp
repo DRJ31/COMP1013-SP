@@ -17,5 +17,5 @@ int main()
 (3)There must be a return 0 at the end of the program
 (4)Lack of #include <stdio.h>
 (5)Lack of ";" at the end of some expression.
-2. There is still a warning that i is not initialized.
+2. There is still a warning that i is not initialized and variable f is not used.
 */
