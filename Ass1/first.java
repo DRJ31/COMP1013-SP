@@ -7,7 +7,7 @@ public class first{
         ch = scan.next().toCharArray()[0];
         System.out.printf("the ASCII code of '%c' is %d\n", ch, (int)ch);
         System.out.printf("the value of i is %d\n", i);
-        i = (int)ch;
+        i = ch;
         System.out.printf("the value of i is %d\n", i);
     }
 }
