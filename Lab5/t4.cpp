@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	char gpa;
+	char gpa;//Character of GPA grade
 	puts("Please input the GPA grade: ");
 	scanf("%c", &gpa);
 	switch (gpa)

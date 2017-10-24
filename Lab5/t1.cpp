@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int n;
+	int n;//The number n
 	puts("Please input n: ");
 	scanf("%d", &n);
 	if (n < 0)

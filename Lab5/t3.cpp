@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main()
 {
-	double dollar;
-	char currency;
+	double dollar;//The amount of dollars
+	char currency;//Character to judge which currency to convert
 	puts("Please input the amount of US dollars: ");
 	scanf("%lf", &dollar);
 	puts("Convert to Euro(E) or RMB(R)?");
