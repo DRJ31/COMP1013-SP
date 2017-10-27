@@ -7,8 +7,10 @@ int main()
 	scanf("%d", &a);
 	if (a > 999)
 		puts("The input is too big.");
-	else
+	else if (a >= 0)
 		printf("The number of digits of %d is %d.\n", a, digits(a));
+	else
+		puts("Please input valid number.");
 	return 0;
 }
 int digits(int num)

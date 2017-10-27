@@ -8,8 +8,10 @@ class digits
         a = int.Parse(Console.ReadLine());
         if (a > 999)
             Console.WriteLine("The input is too big.");
-        else
+        else if (a >= 0)
             Console.WriteLine("The number of digits of {0} is {1}.", a, Digit(a));
+		else
+			Console.WriteLine("Please input valid number.");
     }
     static int Digit(int num)
     {
