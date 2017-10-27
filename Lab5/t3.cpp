@@ -5,6 +5,8 @@ int main()
 	char currency;//Character to judge which currency to convert
 	puts("Please input the amount of US dollars: ");
 	scanf("%lf", &dollar);
+	if (dollar < 0)
+		puts("Please input valid number.");
 	puts("Convert to Euro(E) or RMB(R)?");
 	getchar();
 	scanf("%c", &currency);
