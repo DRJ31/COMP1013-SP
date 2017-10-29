@@ -8,8 +8,10 @@ public class digits{
         scan.close();
         if (a > 999)
             System.out.println("The input is too big.");
-        else
+        else if (a > 0)
             System.out.printf("The number of digits of %d is %d.\n", a, digit(a));
+		else
+			System.out.println("Please input valid number.");
     }
     private static int digit(int num){
         if (num > 99)

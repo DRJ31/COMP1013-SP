@@ -8,6 +8,8 @@ public class t3{
         Scanner scan = new Scanner(System.in);
         System.out.println("Please input the amount of US dollars: ");
         dollar = scan.nextDouble();
+		if (dollar < 0)
+			System.out.println("Please input valid numbers.");
         System.out.println("Convert to Euro(E) or RMB(R)?");
         currency = scan.next().toCharArray()[0];
         scan.close();
