@@ -5,19 +5,22 @@ int checkPrime(int a);
 int main()
 {
 	int number;
-	for (number = 4; number <= 100; number += 2)
+	for (number = 4; number <= 1000; number += 2)
 	{
-		int firstNum = 2;
+		int firstNum = 2, status = 1;
 		while (firstNum <= (number / 2))
 		{
 			if (checkPrime(number - firstNum))
 			{
 				printf("even number: %d = %d + %d\n", number, firstNum, number - firstNum);
+				status = 0;
 				break;
 			}
 			else
 				firstNum = nextPrime(firstNum);
 		}
+		if (status)
+			printf("Err: %d\n", number);
 	}
 	return 0;
 }
