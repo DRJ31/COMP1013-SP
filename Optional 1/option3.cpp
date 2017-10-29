@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int nextPrime(int a);
 int checkPrime(int a);
 int main()
@@ -23,7 +24,7 @@ int main()
 int checkPrime(int a)
 {
 	int i;
-	for (i = 3; i <= a / 2; i += 2)
+	for (i = 2; i <= sqrt(a); i++)
 	{
 		if (a % i == 0)
 			return 0;
