@@ -5,7 +5,7 @@ int checkPrime(int a);
 int main()
 {
 	int number;
-	for (number = 4; number <= 1000; number += 2)
+	for (number = 4; number <= 100; number += 2)
 	{
 		int firstNum = 2, status = 1;
 		while (firstNum <= (number / 2))
