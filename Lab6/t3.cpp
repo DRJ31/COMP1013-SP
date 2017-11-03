@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
-    int count = 0;
-    char check;
+    int count = 0;//the number of a.
+    char check;//variable of every character
     while(true){
         scanf("%c", &check);
         if (check == '\n')

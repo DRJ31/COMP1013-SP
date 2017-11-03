@@ -1,17 +1,17 @@
 #include <stdio.h>
-int judgePrime(int a);
+int judgePrime(int a);//Judge if the number is a prime number.
 int main(){
     int num;
     printf("Please input a positive integer: ");
     scanf("%d", &num);
-    if (num <= 0){
+    if (num <= 0){//Situation when input is not a positive integer.
         puts("Invalid Input!");
         return -1;
     }
     if (judgePrime(num))
         printf("%d is a prime.\n", num);
     else
-    printf("%d is not a prime.\n", num);
+        printf("%d is not a prime.\n", num);
     return 0;
 }
 int judgePrime(int a){
