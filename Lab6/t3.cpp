@@ -1,13 +1,12 @@
 #include <stdio.h>
 int main(){
-    int i, count = 0;
-    char sentence[1000];
-    scanf("%[^\n]", sentence);
-    char* forSentence = sentence;
-    for (i = 0; i < 1000; i++){
-        if (*(forSentence+i) == '\n')
+    int count = 0;
+    char check;
+    while(true){
+        scanf("%c", &check);
+        if (check == '\n')
             break;
-        if (*(forSentence+i) == 'a')
+        if (check == 'a')
             count++;
     }
     printf("%d\n", count);
