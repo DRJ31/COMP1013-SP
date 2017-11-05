@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.util.List;
+import java.util.LinkedList;
 public class t3{
     public static void main(String[] args) {
         int range;
