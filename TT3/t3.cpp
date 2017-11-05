@@ -10,8 +10,8 @@ int main() {
 		if (checkPerfect(factor, i))
 		{
 			printf("%d its factors are ", i);
-			for (int i = 1; i < *factor; i++)
-				printf("%d ", *(factor + i));
+			for (int j = 1; j < *factor; j++)
+				printf("%d ", *(factor + j));
 			puts("");
 		}
 	}
