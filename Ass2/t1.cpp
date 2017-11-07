@@ -6,6 +6,6 @@ int main()
 	{
 		for (j = 0; j < i; j++)
 			printf("*#");
-		printf("*\n");
+		printf("*\n");//print the last * in every row
 	}
 }
