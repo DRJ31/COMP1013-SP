@@ -1,12 +1,12 @@
 #include <stdio.h>
-char toLower(char a);
+char toLower(char a);//Make English letters in their lower case
 int main() {
 	char inputString[50];
 	int i;
 	puts("Please input an English word: ");
 	for (i = 0; i < 50; i++) {
 		scanf("%c", &inputString[i]);
-		if (inputString[i] == '\n' || inputString[i] == ' ')//check if the character is a lower-case English letter
+		if (inputString[i] == '\n' || inputString[i] == ' ')//break while it is not a word but a sentence
 			break;
 	}
 	for (int j = 0; j < i / 2; j++) {//check if it is a palindrome
