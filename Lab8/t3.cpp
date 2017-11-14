@@ -6,11 +6,10 @@ int main(){
     scanf("%s", firstString);
     puts("Please input the second string: ");
     scanf("%s", secondString);
-    if (StringCompare(firstString, secondString)){
+    if (StringCompare(firstString, secondString))
         puts("The two strings are the same.");
-        return 0;
-    }
-    puts("The two strings are not the same.");
+    else
+        puts("The two strings are not the same.");
     return 0;
 }
 int StringCompare(char a[], char b[]){
