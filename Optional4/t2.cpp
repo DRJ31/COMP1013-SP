@@ -19,6 +19,5 @@ int compareASCII(char a, char b){
         return 0;
     else if (a > b)
         return 1;
-    else
-        return -1;
+    return -1;
 }
