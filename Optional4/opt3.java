@@ -8,7 +8,6 @@ public class opt3{
             System.out.printf("The number is %f\n", resultNumber(number, number.length(), checkFirst(number)));
         else
             System.out.printf("The number is %s\n", new DecimalFormat().format(resultNumber(number, checkPointPos(number), checkFirst(number)) + resultFloatNum(number, checkPointPos(number), number.length())));
-        
     }
     private static boolean checkFirst(String str){
         return str.charAt(0) <= '9' && str.charAt(0) >= '0';
