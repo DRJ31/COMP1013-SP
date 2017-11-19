@@ -48,5 +48,7 @@ double resultFloatNum(char num[], int begin, int length) {
 	double result = 0;
 	for (int i = begin + 1; i < length; i++) 
 		result += ((int)num[i] - 48) * exp(0.1, i - begin);
+	if (num[0] == '-')
+		return -result;
 	return result;
 }
