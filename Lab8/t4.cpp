@@ -1,6 +1,6 @@
 #include <stdio.h>
-int main(){
-    char a;//variable to store input characters temporary
+char a;//variable to store input characters temporary
+void scanChar(){
     while(1){
         scanf("%c", &a);
         if ('0' > a || a > '9')
@@ -8,5 +8,8 @@ int main(){
         printf("%c", a);
     }
     puts("");
+}
+int main(){
+    scanChar();
     return 0;
 }
