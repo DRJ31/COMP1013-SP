@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void checkLetter(char a);//Check if the character is an English letter
+void checkLetter(char a);//Check if the character is an English letter and print out
 int main(){
     char str[50];
     puts("Please input a string: ");
