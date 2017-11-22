@@ -4,9 +4,9 @@ bool isSubstring(char firstString[], char secondString[]);
 int main(){
     char firstString[50], secondString[50];
     puts("Please input the first string: ");
-    gets(firstString);
+    scanf("%s", firstString);
     puts("Please input the second string: ");
-    gets(secondString);
+    scanf("%s", secondString);
     if (isSubstring(firstString, secondString))
         puts("The first string is a substring of the second.");
     else
