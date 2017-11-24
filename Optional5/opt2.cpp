@@ -2,7 +2,7 @@
 void bubbleSort(int numbers[], int length);
 int main(){//Input 0 to stop scanning.
     int numbers[50];
-    puts("Please input numbers: ");
+    puts("Please input numbers, end with '0': ");
     int i;
     for (i = 0; i < 50; i++){
         scanf("%d", &numbers[i]);
