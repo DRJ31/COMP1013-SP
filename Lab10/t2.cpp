@@ -10,7 +10,9 @@ int main(){
             puts("Good bye.");
             break;
         }
+        printf("%d is ", number);
         toBinary(number, result);
+        puts(" in binary.");
     }
     return 0;
 }
@@ -26,8 +28,8 @@ void toBinary(int number, char result[]){
         number /= 2;
         i++;
     }
+    i--;
     for (int j = i; j >= 0; j--){
         printf("%c", result[j]);
     }
-    puts("");
 }
