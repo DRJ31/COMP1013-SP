@@ -1,8 +1,8 @@
 #include <stdio.h>
-void toBinary(int number, char result[]);
+void toBinary(int number, char result[]);//Calculate the binary of a decimal number
 int main(){
     int number;
-    char result[60];
+    char result[60];//An array to store a string
     while (true){
         puts("Please input a decimal number: ");
         scanf("%d", &number);
