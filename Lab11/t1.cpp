@@ -9,8 +9,8 @@ typedef struct {
 typedef struct {
     Line l1, l2, l3;
 } Triangle;
-double length(Line line);
-double circumference(Triangle tri);
+double length(Line line);//Length of a line
+double circumference(Triangle tri);//Circumference of triangle
 int main(){
     Point points[] = {{1,5}, {2, 1}, {2, 7}, {4, 3}, {6, 8}, {8, 2}};
     Line lines[] = {{points[0], points[2]}, {points[3], points[4]}, {points[3], points[5]}, {points[4], points[5]}};
