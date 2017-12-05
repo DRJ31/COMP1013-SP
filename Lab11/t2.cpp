@@ -9,12 +9,12 @@ int main(){
     Student stus[50];
     int i;
     puts("Please input student's name, score and major.");//Input with the order name, score and major.
-    for (i = 0; i < 50; i++){//Break when student's score is -1
+    for (i = 0; i < 50; i++){
         scanf("%50s", stus[i].name);
+        if (strcmp(stus[i].name, "end") == 0)//Break when the name of student is "end"
+            break;
         scanf("%lf", &stus[i].score);
         scanf("%50s", stus[i].major);
-        if (stus[i].score == -1)
-            break;
     }
     bubbleSort(stus, i);
     printf("Name\tScore\tMajor\n");
