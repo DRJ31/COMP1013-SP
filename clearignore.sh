@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in `cat .gitignore`
+for i in `cat .gitignore`;
 do
-    find . -name $i
+    echo $i | xargs find . -name
 done
