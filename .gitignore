@@ -2,7 +2,9 @@
 *.7z
 *.zip
 *.o
-*.out
 .DS_Store
 *.exe
 test.cpp
+.idea/
+.vscode/
+*.out
