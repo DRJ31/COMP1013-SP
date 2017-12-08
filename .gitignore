@@ -6,5 +6,6 @@
 *.exe
 test.cpp
 *.out
+#Folders
 .idea/
 .vscode/
