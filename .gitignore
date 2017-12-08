@@ -5,6 +5,6 @@
 .DS_Store
 *.exe
 test.cpp
+*.out
 .idea/
 .vscode/
-*.out
