@@ -15,8 +15,9 @@ int occurrence1(char *sub, char *str) {
 	else if (*sub != *str)
 		return occurrence1(sub, (str + 1));
 	else {
-		char *tmp;
-		strncpy(tmp, str, strlen(sub));
+		char tmp[20];
+		memcpy(tmp, str, strlen(sub));
+		tmp[strlen(sub)] = '\0';
 		if (strcmp(sub, tmp) == 0)
 			return occurrence1(sub, (str + 1)) + 1;
 		else
@@ -24,11 +25,12 @@ int occurrence1(char *sub, char *str) {
 	}
 }
 int occurrence2(char *sub, char *str) {
-	int result = 0;
-	for (int i = 0; i < strlen(str); i++) {
+	int result = 0, length = strlen(str);
+	for (int i = 0; i < length; i++) {
 		if (*sub == *str) {
-			char *tmp;
-			strncpy(tmp, str, strlen(sub));
+			char tmp[20];
+			memcpy(tmp, str, strlen(sub));
+			tmp[strlen(sub)] = '\0';
 			if (strcmp(sub, tmp) == 0)
 				result++;
 		}
