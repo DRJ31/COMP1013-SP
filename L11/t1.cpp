@@ -17,9 +17,14 @@ int fileCopy(char *destFileName, char *resFileName){
     FILE *fp1 = fopen(resFileName, "r");
     FILE *fp2 = fopen(destFileName, "w+");
     char c;
-    if (fp1 == NULL)
-        return 0;
+    if (fp1 == NULL){
+		fclose(fp1);
+		fclose(fp2);
+		return 0;
+	}
     while((c = fgetc(fp1)) != EOF)
         fputc(c,fp2);
+	fclose(fp1);
+	fclose(fp2);
     return 1;
 }

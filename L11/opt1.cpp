@@ -11,5 +11,6 @@ int main(){
     for (int i = 0; i < length; i++)
         *(randstr+i) = MIN + rand() % 27;
     puts(randstr);
+	free(randstr);
     return 0;
 }
