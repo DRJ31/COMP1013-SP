@@ -8,9 +8,9 @@ int main()
     scanf("%s", str2); // read name of file (.txt) to copyto
     flag = fileCopy(str2, str1);
     if (flag == 1)
-    printf("Success");
+		printf("Success");
     else
-    printf ("Failure");
+		printf ("Failure");
     return 0;
 }
 int fileCopy(char *destFileName, char *resFileName){
