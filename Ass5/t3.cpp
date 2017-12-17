@@ -5,16 +5,20 @@ typedef struct {
 } Student;
 void sort(Student stus[], int length);//Sort the students by score
 int main(){
-    FILE *fp1 = fopen("student.txt", "r");//File pointer of student.txt
+    FILE *fp1 = fopen("student.txt", "w+");//File pointer of student.txt
     FILE *fp2 = fopen("sorted.txt", "w+");//File pointer of sorted.txt
     Student students[20];
     int i = 0;//Count number of students
-    while (fscanf(fp1, "%s %d", students[i].name, &students[i].score) != EOF)
-        i++;
-    fclose(fp1);
+    puts("Please input the name and score of students (Enter 0 0 to stop scanning): ");
+    for (i = 0; i < 20; i++){//Input 0 0 to stop scanning
+        scanf("%s %d", students[i].name, &students[i].score);
+        if (students[i].score == 0)
+            break;
+        fprintf(fp1, "%s\t%d\n", students[i].name, students[i].score);
+    }
     sort(students, i);
     for (int j = 0; j < i; j++)
-        fprintf(fp2, "%s %d\n", students[j].name, students[j].score);
+        fprintf(fp2, "%s\t%d\n", students[j].name, students[j].score);
     fclose(fp2);
     return 0;
 }
