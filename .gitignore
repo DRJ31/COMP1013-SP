@@ -1,3 +1,4 @@
+#Type of files
 *.class
 *.7z
 *.zip
@@ -6,7 +7,11 @@
 *.exe
 test.*
 *.out
+
 #Folders
 .idea/
 .vscode/
-sorted.txt
+
+#Specific files
+Ass5/sorted.txt
+Lab13/passwd.txt
