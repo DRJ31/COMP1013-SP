@@ -9,6 +9,15 @@ do
 	let long--
 	find . -name "${arr[$i-1]:0:$long}" | tee log.txt | xargs rm -rf
 done
+tmp=`cat .gitignore | grep "^[a-zA-Z].*/"`
+read -a arr <<< ${tmp[@]}
+length=${#arr[@]}
+for i in `seq 1 $length`
+do
+	long=${#arr[$i-1]}
+	let long--
+	echo "${arr[$i-1]:0:$long}" | tee -a log.txt | xargs rm -rf
+done
 cat log.txt
 rm -f log.txt
 #find . -name "${arr[$length]}" | tee -a log.txt | xargs rm -rf
