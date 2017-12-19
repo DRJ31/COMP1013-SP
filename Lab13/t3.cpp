@@ -11,7 +11,6 @@ int main(){
     scanf("%d", &length);
     length++;
     char *passwd = (char *)malloc(length * sizeof(char));
-    printf("%s\n", generateChar(length));
     while (true){
         passwd = generateChar(length);
         printf("Password suggestion: %s\n", passwd);
