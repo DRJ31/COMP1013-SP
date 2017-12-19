@@ -20,6 +20,6 @@ int main()
 /*
 1. The memory dynamically allocated
 2. %*c is used for ignore a char. In this function, it is use to ignore space between number and gender
-3. %-10s means if the length of the string is less than 10, then use space to fill it. If it is changed to %10s, that means it will only scan 10 characters.
+3. %-10s means if the length of the string is less than 10, then use space to fill it in its back. If it is changed to %10s, then it will use space to fill it before the string if the length of string is less than 10.
 4. Because we should free the memory if we don't need to use it so that the memory can store other things
 */
