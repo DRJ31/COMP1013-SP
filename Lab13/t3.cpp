@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-char randomChar(int seed); //Generate random character in upper case and lower case letters and numbers
+char randomChar(); //Generate random character in upper case and lower case letters and numbers
 char *generateChar(int length);//Generate char according to length
 int main(){
     int length;
@@ -25,7 +25,7 @@ int main(){
     free(passwd);
     return 0;
 }
-char randomChar(int seed){
+char randomChar(){
     char elements[62];//Array to store possible letters and numbers
     int i;
     for (i = 0; i < 10; i++){
@@ -39,13 +39,13 @@ char randomChar(int seed){
         elements[i] = 'a' + i - 36;
         i++;
     }
-    srand(seed * time(0));
     return elements[rand() % 62];
 }
 char *generateChar(int length){
     char *result = (char *)malloc(length * sizeof(char));
+    srand(time(NULL));
     for (int i = 0; i < length; i++){
-        *(result + i) = randomChar(i+1);
+        *(result + i) = randomChar();
     }
     return result;
 }
